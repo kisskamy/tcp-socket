@@ -10,7 +10,7 @@ Go version: 1.9.x or later
 ## Usage
 
 ```
-go get -u github.com/9b9387/zero
+go get -u github.com/kisskamy/tcpSocket
 ```
 
 ```go
