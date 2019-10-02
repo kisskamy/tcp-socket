@@ -1,4 +1,4 @@
-package zero
+package tcpSocket
 
 import (
 	uuid "github.com/satori/go.uuid"

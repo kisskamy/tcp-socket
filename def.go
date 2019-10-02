@@ -1,4 +1,4 @@
-package zero
+package tcpSocket
 
 const (
 	// STUnknown Unknown

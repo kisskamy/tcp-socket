@@ -1,4 +1,4 @@
-module tcpSocket
+module tcp-socket
 
 go 1.12
 
