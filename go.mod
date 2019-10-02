@@ -1,4 +1,4 @@
-module tcpsocket
+module github.com/kisskamy/tcpsocket
 
 go 1.12
 
