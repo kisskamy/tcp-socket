@@ -28,7 +28,7 @@ type SocketService struct {
 
 var log *zxylog.ZxyLog
 
-//获取当前执行文件路径
+//获取当前执行文件路径.
 func GetBinDir() string {
 	dir, err := filepath.Abs(filepath.Dir(os.Args[0]))
 	if err != nil {
