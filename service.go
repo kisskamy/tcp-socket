@@ -40,7 +40,7 @@ func GetBinDir() string {
 // NewSocketService create a new socket service
 func NewSocketService(laddr string) (*SocketService, error) {
 
-	zxylog.NewZxyLog(GetBinDir()+"/../logs", "TcpServer")
+	log = zxylog.NewZxyLog(GetBinDir()+"/../logs", "TcpServer")
 	log.SetLevel(zxylog.INFO)
 
 	l, err := net.Listen("tcp", laddr)
