@@ -1,4 +1,4 @@
-package tcpSocket
+package tcpsocket
 
 import (
 	"fmt"
@@ -64,5 +64,5 @@ func NewClientConnect() {
 	if err != nil {
 		return
 	}
-	conn.Write(data)
+	_, _ = conn.Write(data)
 }
