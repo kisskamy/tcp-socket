@@ -7,7 +7,6 @@ import (
 	"errors"
 	"io"
 	"net"
-	"strconv"
 	"time"
 )
 
@@ -119,12 +118,6 @@ func (c *Conn) readCoroutine(ctx context.Context) {
 			if err != nil {
 				c.done <- err
 				log.Errorf("读取失败: " + err.Error())
-				continue
-			}
-			size, err := strconv.Atoi(string(buf))
-			if size == 0 {
-				c.done <- errors.New("data header error")
-				log.Errorf("数据大小不正确")
 				continue
 			}
 
